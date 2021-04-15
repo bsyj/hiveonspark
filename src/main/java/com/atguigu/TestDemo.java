@@ -1,6 +1,7 @@
 package com.atguigu;
 
 import sun.misc.ProxyGenerator;
+
 import java.io.FileOutputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -14,6 +15,7 @@ public class TestDemo {
         // 对 UserService生成一个代理类，
         byte[] bytes = ProxyGenerator.generateProxyClass("Proxy$", new Class[]{UserService.class});
         new FileOutputStream("./Proxy$.class").write(bytes);
+        System.out.println("hello.txt");
     }
 }
 
