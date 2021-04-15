@@ -16,6 +16,7 @@ public class TestDemo {
         byte[] bytes = ProxyGenerator.generateProxyClass("Proxy$", new Class[]{UserService.class});
         new FileOutputStream("./Proxy$.class").write(bytes);
         System.out.println("hello.txt");
+        System.out.println("ccccccc");
     }
 }
 
