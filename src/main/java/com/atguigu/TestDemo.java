@@ -17,6 +17,7 @@ public class TestDemo {
         new FileOutputStream("./Proxy$.class").write(bytes);
         System.out.println("hello.txt");
         System.out.println("ccccccc");
+        System.out.println("ddddddd");
     }
 }
 
